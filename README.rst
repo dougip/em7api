@@ -209,6 +209,6 @@ This project relies on the requests module to make the API calls
 License
 =======
 
-This project is licensed under the `MIT license`
+This project is licensed under the `MIT license`_
 
 .. _`MIT license`: https://github.com/dougip/em7api/blob/master/LICENSE.md
