@@ -81,6 +81,7 @@ The credentials and URI can also be passed as parameters instead of configured i
 
 
 .. code-block:: python
+    
     import em7api
 
     session = em7api.EM7API(uri='https://em7.example.com', \
@@ -95,6 +96,7 @@ If SSL verification fails, the API call will fail with an SSL error.  The easies
 
  
 .. code-block:: python
+    
     import em7api
 
     dev_session = em7api.EM7API(verify_ssl=False)
@@ -113,6 +115,7 @@ Read operations are done with a get.  Doing a get with the URI of a resource wil
 Each object will have its own URI, and doing a get on that will return details of that specific object
 
 .. code-block:: python
+    
     print session.get('/api/account/1')
 
 limit parameter
@@ -122,6 +125,7 @@ By default, EM7 limits its search to 100.  If the data set is greater than that,
 
 
 .. code-block:: python
+    
     print session.get('/api/powerpack', parameters={'limit': 200})
 
 filters
@@ -130,12 +134,14 @@ filters
 The filter parameter can be sent to filter the results.  The available filters can be found in the API browser or in the API manual
 
 .. code-block:: python
+    
     print session.get('/api/powerpack', parameters={'limit': 1000, \
                                                     'filter.0.name.begins_with': 'Science'})
 
 More than one filter can be added.  Each additional filter needs its number incremented.
 
 .. code-block:: python
+    
     print session.get('/api/powerpack', parameters={'limit': 1000, \
                                                     'filter.0.name.begins_with': 'Science', \
                                                     'filter.1.name.contains': 'EM7'})
@@ -146,11 +152,13 @@ post
 Adding and updating objects is done with a post.  The data dictionary contains the details that need to be set for the new or updated object.  Whatever is not specified in the data dictionary will mostly be left alone or set to a default value.  The following would add a new organization, specifying the company name and leaving the rest blank:
 
 .. code-block:: python
+    
     session.post('/api/organization', data={'company': 'Post Company'})
 
 To update an existing object, specify its own URI as the resource, and pass the changes in the data dictionary
 
 .. code-block:: python
+    
     session.post('/api/organization/1', data={'company': 'Your Company'})
 
 put
@@ -159,6 +167,7 @@ put
 Updates can also be done with a put.  This is more restrictive, as it requires the object to already exist and requires a larger set of the objects' details to be sent in the data dictionary, otherwise it will result in an error.
 
 .. code-block:: python
+    
     session.put('/api/organization/1', data={'company': 'Another Company', \
                                              'address': '', \
                                              'city': 'New York', \
@@ -189,6 +198,7 @@ delete
 Objects can be removed with a delete.
 
 .. code-block:: python
+    
     session.delete('/api/organization/1')
 
 Acknowledgments
