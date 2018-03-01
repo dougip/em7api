@@ -128,7 +128,7 @@ By default, EM7 limits its search to 100.  If the data set is greater than that,
     
     print session.get('/api/powerpack', parameters={'limit': 200})
 
-filters
+Filters
 -------
 
 The filter parameter can be sent to filter the results.  The available filters can be found in the API browser or in the API manual
@@ -153,7 +153,7 @@ Adding and updating objects is done with a post.  The data dictionary contains t
 
 .. code-block:: python
     
-    session.post('/api/organization', data={'company': 'Post Company'})
+    session.post('/api/organization', data={'company': 'My Company'})
 
 To update an existing object, specify its own URI as the resource, and pass the changes in the data dictionary
 
@@ -211,4 +211,4 @@ License
 
 This project is licensed under the `MIT license`
 
-.. _`MIT license`: https://github.com/em7api/LICENSE.md
+.. _`MIT license`: https://github.com/dougip/em7api/blob/master/LICENSE.md
