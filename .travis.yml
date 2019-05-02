@@ -1,4 +1,7 @@
-#language: python
+language: python
+
+script:
+  - echo "no tests"
 
 deploy:
   provider: pypi
