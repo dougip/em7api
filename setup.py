@@ -6,6 +6,7 @@ with open('README.rst') as f:
 
 setup(
   name='em7api',
+  author='Doug Ip'
   version='0.1.4',
   packages=['em7api',],
   package_dir={'em7api': 'em7api'},
