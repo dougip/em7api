@@ -1,15 +1,17 @@
 from setuptools import setup
 from os import path
 
-this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.rst'), encoding='utf-8') as f:
+with open('README.rst') as f:
   long_description_contents = f.read()
 
 setup(
   name='em7api',
-  version='0.1.3',
+  author='Doug Ip',
+  version='0.1.4',
   packages=['em7api',],
   package_dir={'em7api': 'em7api'},
+  description='An unofficial Python wrapper for the Science Logic EM7 API',
   long_description=long_description_contents,
   install_requires=['requests']
 )
+

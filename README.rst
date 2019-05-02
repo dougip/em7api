@@ -4,6 +4,10 @@ em7api
 
 An unofficial Python wrapper for the Science Logic EM7 API
 
+GitHub: https://github.com/dougip/em7api/
+
+PyPI: https://pypi.org/project/em7api/
+
 Getting Started
 ===============
 
