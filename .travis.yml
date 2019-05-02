@@ -4,10 +4,17 @@ script:
   - echo "no tests"
 
 deploy:
-  provider: pypi
-  server: https://test.pypi.org/legacy/
-  user: dougip2
-  password:
-    secure: "NL9bjKuFn1cNmIzxTLBQWdDqztVDGa7yefGI8lblRocDm2QIZOONWL8c/bFo4kV41lgCGqqP14J22M9cwmE30ch5VGyA7m8+r24HX+hQ3CvdcmWyx372JNoOL27l4or4M4kTQrRk7McDzkXr9TZ0TsGFX0XMBERXjokFKUddMsIEpaQNUFIlr7D4INfYvZyMPrtaurC5GCUlOlH8OZGEHGj26ebPL0yxK7QjMIX1OgPfu4hHqiech1aY8R5ISXTTD/9CsuRiJUpu158V1YMY2XHkSUStu7BKqw7S7ITSuhHwfFHAv1B2Jmy77MC/NhkPF/Mh26c5KXifF1IYd4RF8edoUtExvqSxEv91WKxnOHoRCoal7dnqM8zEpOBkHFegm8oBIeQm0+tSIZtr8xXD7jSc21T9nGUt2y5Vpk2eHM1y0Po9gx5PpRETHA6Jcg9MJTiA5xrmDPmvtjb7JbU1xFGD3Kunko1w7tVzFbjRbJcZSOLAzh8VFJVcXuygiUBTgH//BVM6P28IGQeB7JtP5Rf1fFp+QTh+JaF59ill69zcAeeAsWOdptLr3jxbyMs+TFwPgmNsKfT0tR9ya52v1ykosikvLjZyFVOVipaIRVEniDfR7GI7zq0eMIv9alVbzwhvBFN/YwPbizxMYEFV+MEIFgxXjnNilrJV5YkpzSA="
-  on:
-    branch: test
+  - provider: pypi
+    server: https://test.pypi.org/legacy/
+    user: dougip2
+    password:
+      secure: "NL9bjKuFn1cNmIzxTLBQWdDqztVDGa7yefGI8lblRocDm2QIZOONWL8c/bFo4kV41lgCGqqP14J22M9cwmE30ch5VGyA7m8+r24HX+hQ3CvdcmWyx372JNoOL27l4or4M4kTQrRk7McDzkXr9TZ0TsGFX0XMBERXjokFKUddMsIEpaQNUFIlr7D4INfYvZyMPrtaurC5GCUlOlH8OZGEHGj26ebPL0yxK7QjMIX1OgPfu4hHqiech1aY8R5ISXTTD/9CsuRiJUpu158V1YMY2XHkSUStu7BKqw7S7ITSuhHwfFHAv1B2Jmy77MC/NhkPF/Mh26c5KXifF1IYd4RF8edoUtExvqSxEv91WKxnOHoRCoal7dnqM8zEpOBkHFegm8oBIeQm0+tSIZtr8xXD7jSc21T9nGUt2y5Vpk2eHM1y0Po9gx5PpRETHA6Jcg9MJTiA5xrmDPmvtjb7JbU1xFGD3Kunko1w7tVzFbjRbJcZSOLAzh8VFJVcXuygiUBTgH//BVM6P28IGQeB7JtP5Rf1fFp+QTh+JaF59ill69zcAeeAsWOdptLr3jxbyMs+TFwPgmNsKfT0tR9ya52v1ykosikvLjZyFVOVipaIRVEniDfR7GI7zq0eMIv9alVbzwhvBFN/YwPbizxMYEFV+MEIFgxXjnNilrJV5YkpzSA="
+    on:
+      branch: test
+  - provider: pypi
+    user: dougip
+    password:
+      secure: "eNVfzZBU4/2y/ZP099xXPU8j7Art0fEtLexf/xuKnKp0GmuQ/+wCbjL2qSGm/wwrZ65uN5izJKyqmO93J97qdLtS3G2avW9yIQitc1pcH+2oLGi7S5N6x99dYHhTVQZXDX3BQkHlaq9WbJG++zIe607EprkuN42Qwii5Ipp/f1GYxjcG8228eRgddPoCD9nLi/TiKgfBY8v+pahRQoNHV8tVvQKPwMueYgHxA4aD0NeazFQ46SW8fNtSgT78iZer28kVFb08gvTw2+xbAC8ecN6GSo6Z470XN9homxj+4bB29bb1xNzE+TyutfBnO5pzAMmfDAD9NwRB0e3MOuIPiSvtQzHm09d0AruG2O4TSaLhWL3ZhjfWkDR7qxrEMvAyakODbqIEpKNmmcIoVi+/HmmMSXHML/V+uMZWtOrEV0FZ3NAKAq+UhEAuv+wNhZEv7l5NlHzUapW7FYAfmLg82118422mSWYEXTALnboxIwhXCUs0dDefLkmuQBQlt9DAjSErBEdaz8MCaPSOhxv3B+i/9KB5QsjcAs4J0nmeDISBtsLeoAre/ONkAy4xIiv1nTtQNzsWPT9NOiw3LL+aiLXza8fgSyI4p51nuwEmc1isF5fjqhh/1xn4CTDewlBBNOP7RNCXBqaOBEXoJPsvKIYDxKJPPeUEjpFCmNr81k0="
+    on:
+      branch: master
+      tags: true
