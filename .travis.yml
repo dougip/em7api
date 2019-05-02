@@ -1,9 +1,9 @@
-#language: python
+language: python
 
 deploy:
   provider: pypi
   server: https://test.pypi.org/legacy/
-  user: "dougip"
+  user: dougip
   password:
     secure: "VWfiBhPXPxfPQD9cs9NLefdOmtF2lWP8taxdDcbsdxEqait97NiLJnXcxYNYjWdDyT9DRCFXHPogIeYUg5B4b19iJlcUS17Yu6MyDDyAY8pvTolf9EVozIoKMfuSH/VV6uzRfDt7NS/TVhJvkfACWPMsZapXtsfBTJCLcFOqw/GuvHh8fviB0sJlROyapsE1aTEujTHrULpRS8hAchzdi4m5Xh38qmThWa3rcE/OgPoYb0vmzdamoSvrunLI/geVpDu/3EkYp+QqHZcg9S73dm8nJ/0qluEdOOlPb/Is80lQwzva7ma0KguRYm7eR1qzot3FhsBC1w6GW2b/METZYJ0NmCkBhNPl6wYRaBNZUnvZe9T4Atshh2xBYSyCv5Ja2IWd8tx4LS8QM/y2vK6r65BN+dGdQ725RyzLJa6ctyGMoe5grMlQ01vE9p4KCxQTAGvOl3tmlsQruFkPU3YnXi/jC1Dd9iwRvgrTo3MhFC2P3JGjUAwMj9CMN+9plD6sgTwuRBQx+6JvlR+b6RLO+dh5C9S/yKQE7E8NBI9gWy2U7iS1PjumG4vFEZO0AXuq/CNQaQH/HcR02PKRjb5zHL2D+Fo+QXiDkwWFzO+1Ai4vgAAzADAh4IAYIrcqPdDGcTnaYe5rhqN9XhY8cqRfi+Gbh/RFIqIasjCJc4NP/3U="
   on:
