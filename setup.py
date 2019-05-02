@@ -7,7 +7,7 @@ with open('README.rst') as f:
 setup(
   name='em7api',
   author='Doug Ip',
-  version='0.1.5',
+  version='0.1.6',
   packages=['em7api',],
   package_dir={'em7api': 'em7api'},
   description='An unofficial Python wrapper for the Science Logic EM7 API',
